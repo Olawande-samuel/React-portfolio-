@@ -38,7 +38,7 @@ function Form(props) {
 	};
 	const handleSend = (e) => {
 		e.preventDefault();
-		alert("done");
+		// alert("done");
 		setValues((values) => ({
 			...values,
 			name: "",
@@ -47,15 +47,29 @@ function Form(props) {
 			message: "",
 		}));
 	};
+	const encode =(data) => {
+		return Object.keys(data)
+			.map (key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.join("&");
+	}
+
 	const handleSubmit = () => {
-		setSent(true);
-		alert("submitted");
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "appliciation/x-www-form-urlencoded"},
+			body:encode({ "form-name": "contact", ...values})
+		})
+		.then(() => {
+			setSent(true);
+			alert("submitted");
+		})
+		.catch(error => alert(error))
 	};
 	return (
 		<div className="form-wrapper">
 			<h3>Contact me</h3>
 			{sent && <div className="sent text-danger">Message sent!</div>}
-			<form className="contact-me row" onSubmit={handleSubmit}>
+			<form className="contact-me row" onSubmit={handleSubmit} name="contact">
 				<div className="form-left col-sm-6">
 					<div>
 						<label htmlFor="name">Name</label>
