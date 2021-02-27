@@ -3,11 +3,11 @@ import Port from "../Images/React App.png";
 import Port1 from "../Images/React App(1).png";
 import Port2 from "../Images/React App(2).png";
 import Todo from "../Images/Todo-App.png";
-import Manage from "../Images/manage-landing-page-wide.png";
+import Manage from "../Images/manage landing page.png";
 import Manage2 from "../Images/Manage-landing-page(2).png";
 import Manage3 from "../Images/Manage-landing-page(3).png";
-import Todo2 from "../Images/Mentor-Todo-app-light.png";
-import Todo3 from "../Images/Mentor-Todo-app-light(2).png";
+import Todo2 from "../Images/Todo app(1).png";
+import Todo2 from "../Images/Todo app (2).png";
 import Microsoft from "../Images/Microsoft.png";
 import Microsoft1 from "../Images/Microsoft(1).png";
 import Microsoft2 from "../Images/Microsoft(2).png";
@@ -67,13 +67,13 @@ function Portfolio(props) {
 							<img src={Port} alt="portfolio" className="img-fluid" />
 						</div>
 					</div>
-					
+
 					<div className="portfolio col-lg-3 col-md-6" onClick={handleOpenFour}>
 						<div className="port bg-secondary">
 							<img src={Microsoft2} alt="portfolio" className="img-fluid" />
 						</div>
 					</div>
-					
+
 					<div
 						className="portfolio col-lg-3 col-md-6"
 						onClick={handleOpenThree}
@@ -82,7 +82,7 @@ function Portfolio(props) {
 							<img src={Manage} alt="portfolio" className="img-fluid" />
 						</div>
 					</div>
-					
+
 					<div className="portfolio col-lg-3 col-md-6" onClick={handleOpenTwo}>
 						<div className="port bg-secondary">
 							<img src={Todo} alt="portfolio" className="img-fluid" />
@@ -134,9 +134,9 @@ function Portfolio(props) {
 				details="This website was built using React JavaScript"
 				show={show.four}
 				handleClose={handleClose}
-				Image={Microsoft2}
-				PortCar2={Microsoft}
-				PortCar3={Microsoft1}
+				Image={Microsoft}
+				PortCar2={Microsoft1}
+				PortCar3={Microsoft2}
 				githubSite={
 					"https://github.com/Olawande-samuel/react-microsoft-landing-page"
 				}
