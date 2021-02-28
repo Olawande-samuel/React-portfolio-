@@ -42,30 +42,30 @@ function Form(props) {
 		// alert("done");
 		
 	};
-	const encode =(data) => {
-		return Object.keys(data)
-			.map (key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-			.join("&");
-	}
+	// const encode =(data) => {
+	// 	return Object.keys(data)
+	// 		.map (key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+	// 		.join("&");
+	// }
 
 	const handleSubmit = () => {
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "appliciation/x-www-form-urlencoded"},
-			body:encode({ "form-name": "contact", ...values})
-		})
-		.then(() => {
-			setSent(true);
-			alert("Submitted");
-			setValues((values) => ({
-				...values,
-				name: "",
-				email: "",
-				subject: "",
-				message: "",
-			}));
-		})
-		.catch(error => alert(error))
+		// fetch("/", {
+		// 	method: "POST",
+		// 	headers: { "Content-Type": "appliciation/x-www-form-urlencoded"},
+		// 	body:encode({ "form-name": "contact", ...values})
+		// })
+		// .then(() => {
+		// })
+		// .catch(error => alert(error))
+		setSent(true);
+		alert("Submitted");
+		setValues((values) => ({
+			...values,
+			name: "",
+			email: "",
+			subject: "",
+			message: "",
+		}));
 	};
 	return (
 		<div className="form-wrapper">
