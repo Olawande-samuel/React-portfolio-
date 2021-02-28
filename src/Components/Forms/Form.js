@@ -69,8 +69,9 @@ function Form(props) {
 		<div className="form-wrapper">
 			<h3>Contact me</h3>
 			{sent && <div className="sent text-danger">Message sent!</div>}
-			<form className="contact-me row" onSubmit={handleSubmit} name="contact" netlify>
+			<form className="contact-me row" onSubmit={handleSubmit} name="contact" action="/contact" method="POST" netlify>
 				<div className="form-left col-sm-6">
+					<input type="hidden" name="form-name" value="contact"/>
 					<div>
 						<label htmlFor="name">Name</label>
 						<input
