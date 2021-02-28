@@ -38,6 +38,7 @@ function Form(props) {
 	};
 	const handleSend = (e) => {
 		e.preventDefault();
+		handleSubmit()
 		// alert("done");
 		
 	};
@@ -55,7 +56,7 @@ function Form(props) {
 		})
 		.then(() => {
 			setSent(true);
-			alert("submitted");
+			alert("Submitted");
 			setValues((values) => ({
 				...values,
 				name: "",
@@ -69,10 +70,10 @@ function Form(props) {
 	return (
 		<div className="form-wrapper">
 			<h3>Contact me</h3>
-			{sent && <div className="sent text-danger">Message sent!</div>}
-			<form className="contact-me row" onSubmit={handleSubmit} name="contact" action="/contact" method="POST" netlify>
-				<div className="form-left col-sm-6">
+			{sent && <div className="sent text-light">Message sent!</div>}
+			<form className="contact-me row" onSubmit={handleSubmit} name="contact" action="/contact-me" method="POST" data-netlify="true">
 					<input type="hidden" name="form-name" value="contact"/>
+				<div className="form-left col-sm-6">
 					<div>
 						<label htmlFor="name">Name</label>
 						<input

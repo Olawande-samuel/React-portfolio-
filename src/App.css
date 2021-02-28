@@ -72,7 +72,7 @@ nav a {
 	background-blend-mode: multiply;
 	background-size: cover;
 	background-position: center;
-	height: 91vh;
+	height: 92vh;
 }
 
 .main-info {
@@ -119,7 +119,7 @@ nav a {
 
 /***********ABOUT SECTION*********************/
 .about-container {
-	min-height: 91vh;
+	min-height: 92vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -188,7 +188,7 @@ nav a {
 }
 .services-container,
 .portfolio-wrapper {
-	min-height: 90vh;
+	min-height: 92vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -255,7 +255,7 @@ nav a {
 /*****************FORM SECTION*****************/
 .form-wrapper {
 	background: var(--accent-color);
-	min-height: 91vh;
+	min-height: 92vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
