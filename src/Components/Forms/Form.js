@@ -39,13 +39,7 @@ function Form(props) {
 	const handleSend = (e) => {
 		e.preventDefault();
 		// alert("done");
-		setValues((values) => ({
-			...values,
-			name: "",
-			email: "",
-			subject: "",
-			message: "",
-		}));
+		
 	};
 	const encode =(data) => {
 		return Object.keys(data)
@@ -62,6 +56,13 @@ function Form(props) {
 		.then(() => {
 			setSent(true);
 			alert("submitted");
+			setValues((values) => ({
+				...values,
+				name: "",
+				email: "",
+				subject: "",
+				message: "",
+			}));
 		})
 		.catch(error => alert(error))
 	};
