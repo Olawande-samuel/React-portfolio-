@@ -30,7 +30,7 @@ function Header() {
 				}}
 			/>
 			<div className="main-info">
-				<h1>Hi! I am Olawande and I am a </h1>
+				<h1>Hi, I am Olawande and I am a </h1>
 				<Typed
 					className="type-effect"
 					strings={["Web Designer", "Web Developer", "SEO Expert"]}

@@ -70,7 +70,7 @@ function Portfolio(props) {
 
 					<div className="portfolio col-lg-3 col-md-6" onClick={handleOpenFour}>
 						<div className="port bg-secondary">
-							<img src={Microsoft2} alt="portfolio" className="img-fluid" />
+							<img src={Microsoft} alt="portfolio" className="img-fluid" />
 						</div>
 					</div>
 
