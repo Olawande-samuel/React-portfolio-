@@ -72,7 +72,7 @@ nav a {
 	background-blend-mode: multiply;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 91vh;
 }
 
 .main-info {
@@ -100,7 +100,7 @@ nav a {
 
 .btn-main-offer {
 	text-transform: uppercase;
-	border-radius: 0;
+	border-radius: 4px ;
 	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
 	color: var(--primary-white) !important;
 	font-weight: 700 !important;

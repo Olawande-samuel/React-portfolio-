@@ -69,7 +69,7 @@ function Form(props) {
 		<div className="form-wrapper">
 			<h3>Contact me</h3>
 			{sent && <div className="sent text-danger">Message sent!</div>}
-			<form className="contact-me row" onSubmit={handleSubmit} name="contact">
+			<form className="contact-me row" onSubmit={handleSubmit} name="contact" netlify>
 				<div className="form-left col-sm-6">
 					<div>
 						<label htmlFor="name">Name</label>

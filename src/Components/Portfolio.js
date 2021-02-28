@@ -114,7 +114,7 @@ function Portfolio(props) {
 				githubSite={"https://github.com/Olawande-samuel/Todo-list-project"}
 				githubImage={<FaGithub />}
 				liveSiteImage={<FaLink />}
-				liveSite={"https://todo-list-project-ten-vercel.app"}
+				liveSite={"https://todo-list-project-ten.vercel.app/"}
 			/>
 			<Mod
 				heading="Manage Landing Page"
