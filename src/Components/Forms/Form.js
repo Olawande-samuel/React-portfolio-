@@ -62,7 +62,7 @@ function Form(props) {
 				message: "",
 			}));
 		}, 2000);
-		console.log(values)
+		console.log(values);
 	};
 	return (
 		<div className="form-wrapper">
@@ -87,7 +87,7 @@ function Form(props) {
 								value={values.name}
 								placeholder="Enter your name..."
 								onChange={handleName}
-								required="true"
+								required={true}
 							/>
 						</div>
 						<div>
@@ -98,7 +98,7 @@ function Form(props) {
 								value={values.email}
 								placeholder="Enter your email.."
 								onChange={handleEmail}
-								required="true"
+								required={true}
 							/>
 						</div>
 						<div>
@@ -121,7 +121,7 @@ function Form(props) {
 							placeholder="Enter text here"
 							value={values.message}
 							onChange={handleMessage}
-							required="true"
+							required={true}
 						></textarea>
 						<div>
 							<button
