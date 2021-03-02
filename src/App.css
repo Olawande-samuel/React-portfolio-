@@ -262,14 +262,13 @@ nav a {
 	margin-bottom: 40px;
 	color: white;
 }
-form {
-	width: 80%;
-	display: flex;
-	z-index: 111;
+
+.form-container {
+	width: 100%;
+	
 }
 .form-left,
 .form-right {
-	width: 50%;
 	line-height: 30px;
 	padding: 10px;
 }

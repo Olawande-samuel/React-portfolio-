@@ -1,8 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import Particles from "react-particles-js";
-import {Link} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 function Header() {
 	return (
@@ -38,11 +37,10 @@ function Header() {
 					backSpeed={70}
 					loop
 				/>
-                <Link to="/contact-me">
-				<a href="" className="btn-main-offer btn btn-outline-light">
+				
+				<Link to="/contact-me" className="btn-main-offer btn btn-outline-light">
 					Contact me
-				</a>
-                </Link>
+				</Link>
 			</div>
 		</div>
 	);
