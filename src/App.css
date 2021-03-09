@@ -155,7 +155,7 @@ nav a {
 .img-wrapper {
 	width: 18rem;
 	height: 20rem;
-	border-radius: 50%;
+	margin-top: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -163,10 +163,8 @@ nav a {
 
 .img-wrapper img {
 	width: 18rem;
-	height: 20rem;
-	/* object-fit: cover; */
+	height: 24rem;
 	object-position: center;
-	border-radius: 50%;
 	border: 0.3125rem solid var(--accent-color);
 }
 
@@ -265,7 +263,6 @@ nav a {
 
 .form-container {
 	width: 100%;
-	
 }
 .form-left,
 .form-right {
