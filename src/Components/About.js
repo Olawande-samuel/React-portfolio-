@@ -13,9 +13,9 @@ import { SiJavascript } from "react-icons/si";
 function About() {
 	return (
 		<div className="w-100 pt-4 about-container" id="about">
-					<h2 className="text-center">About me</h2>
+					<h2 className="text-center" style={{marginBottom:"0"}}>About me</h2>
 			<div className="row justify-content-between align-items-center">
-				<div className="img-wrapper h-100 d-flex justify-content-center col-md-4">
+				<div className="img-wrapper h-100 d-flex justify-content-center mb-2 mb-md-0 col-md-4">
 					<img src={Photo} alt="Author's Picture" />
 				</div>
 				<div className="col-md-8 px-2 px-sm-1">
