@@ -15,10 +15,10 @@ function About() {
 		<div className="w-100 pt-4 about-container" id="about">
 					<h2 className="text-center">About me</h2>
 			<div className="row">
-				<div className="img-wrapper h-100 d-flex justify-content-center  col-md-4">
+				<div className="img-wrapper h-100 d-flex justify-content-center col-md-4">
 					<img src={Photo} alt="Author's Picture" />
 				</div>
-				<div className="col-md-8 px-1">
+				<div className="col-md-8 px-2 px-sm-1">
 					<p>
 						<span>Hi,</span> I'm sure you must have been wondering, 'who is
 						that guy over there?' Well, that's me, Olawande, a web developer

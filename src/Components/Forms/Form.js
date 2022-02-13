@@ -52,7 +52,7 @@ function Form(props) {
             </div>
           </div>
           <div className="col-md-7">
-            <div className="d-flex px-md-3 px-1 align-items-center justify-content-center">
+            <div className="d-flex px-3 align-items-center justify-content-center">
               <form className=" contact_form" ref={form} onSubmit={submit}>
                 <div className="form-group d-flex flex-column mb-3">
                   <label htmlFor="name" className="form-label text-center text-sm-start">Name</label>
