@@ -70,7 +70,7 @@ function Portfolio(props) {
 
   return (
     <div className="portfolio-wrapper" id="portfolio">
-      <h2 className="text-center">Recent Works</h2>
+      <h2 className="text-center mt-3">Recent Works</h2>
       <div className="port-container  px-2">
         <div
           className="portfolio "

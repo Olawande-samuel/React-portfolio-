@@ -14,7 +14,7 @@ function About() {
 	return (
 		<div className="w-100 pt-4 about-container" id="about">
 					<h2 className="text-center">About me</h2>
-			<div className="row">
+			<div className="row justify-content-between align-items-center">
 				<div className="img-wrapper h-100 d-flex justify-content-center col-md-4">
 					<img src={Photo} alt="Author's Picture" />
 				</div>

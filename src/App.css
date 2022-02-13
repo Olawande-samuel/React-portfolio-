@@ -134,7 +134,7 @@ nav a {
 /***********ABOUT SECTION*********************/
 .about-container {
 	min-height: 92vh;
-	padding: 10px 0;
+	padding: 2rem 0;
 }
 .about-wrapper {
 	margin-top: 2.5rem;
@@ -164,7 +164,6 @@ nav a {
 }
 
 .img-wrapper {
-	width: 18rem;
 	height: 20rem;
 	margin-top: 3rem;
 	display: flex;
@@ -201,6 +200,8 @@ nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 2rem 0;
+
 }
 .services-container h2 {
 	margin-bottom: 30px;
@@ -233,6 +234,7 @@ nav a {
 .portfolio-wrapper{
 	min-height: 92vh;
 	background: #eee;
+	padding: 2rem 0;
 }
 .portfolio-wrapper h2 {
 	margin-bottom: 30px;
