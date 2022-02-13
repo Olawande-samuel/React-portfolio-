@@ -12,16 +12,19 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
-				
 				<Navv />
-				<Switch>
+				<Header />
+				<ServicesGroup />
+				<About />
+				<Portfolio />
+				<Form />
+				{/* <Switch>
 					<Route exact path="/" component={Header} />
 					<Route path="/about" component={About} />
 					<Route path="/services" component={ServicesGroup} />
 					<Route path="/portfolio" component={Portfolio} />
 					<Route path="/contact-me" component={Form} />
-					
-				</Switch>
+				</Switch> */}
 			</div>
 		</Router>
 	);

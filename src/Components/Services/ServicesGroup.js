@@ -5,10 +5,10 @@ import { SiGooglesearchconsole } from "react-icons/si";
 
 function ServicesGroup(props) {
 	return (
-		<div className="services-container">
+		<div className="services-container" id="services">
 			<h2>My Services</h2>
 			<div className="card-wrapper container">
-				<div className="row">
+				<div className="row justify-content-around">
 					<Service
 						container="card-container"
 						col="col-md-4"
@@ -25,14 +25,6 @@ function ServicesGroup(props) {
 						image={<FaLaptopCode />}
 						header="Web Development"
 						detail="Translating design to code; creating responsive, unique, and user-friendly websites."
-					/>
-					<Service
-						container="card-container"
-						col="col-md-4"
-						imgWrapper="service-logo-wrapper"
-						image={<SiGooglesearchconsole />}
-						header="SEO"
-						detail="Improving websites ranking on google search using the best practices."
 					/>
 				</div>
 			</div>

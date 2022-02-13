@@ -14,6 +14,7 @@ function Mod(props) {
 		Image,
 		PortCar2,
 		PortCar3,
+		PortCar4,
 		githubSite,
 		githubImage,
 		liveSite,
@@ -29,7 +30,7 @@ function Mod(props) {
 				aria-labelledby="contained-modal-title-vcenter"
 				centered
 			>
-				<Modal.Header closeButton>
+				<Modal.Header >
 					<Modal.Title>{heading}</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
@@ -45,6 +46,9 @@ function Mod(props) {
 
 						<Carousel.Item>
 							<img src={PortCar3} alt="" className="img-fluid" />
+						</Carousel.Item>
+						<Carousel.Item>
+							<img src={PortCar4} alt="" className="img-fluid" />
 						</Carousel.Item>
 					</Carousel>
 					<div className="portfolio-link-wrapper">

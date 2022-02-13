@@ -16,10 +16,21 @@ a:hover {
 	--accent-color: #0a2327;
 	--alternate-bg: rgb(240, 240, 240);
 }
+.app {
+	scroll-behavior: smooth;
+	position: relative;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+     --bs-gutter-y: 0 !important;
+}
 
 /*****************Navbar ********************/
 .Nav {
-	z-index: 2;
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 	background-color: var(--accent-color);
 }
 .logo {
@@ -57,7 +68,11 @@ a:hover {
 
 	text-decoration: none !important;
 }
-
+.navbar-nav .active {
+	background-color: var(--primary-white);
+	color: var(--accent-color) !important;
+	text-decoration: none !important;
+}
 nav a {
 	text-decoration: none;
 	color: white;
@@ -71,7 +86,7 @@ nav a {
 	background-blend-mode: multiply;
 	background-size: cover;
 	background-position: center;
-	height: 92vh;
+	height: 100vh;
 }
 
 .main-info {
@@ -119,10 +134,6 @@ nav a {
 /***********ABOUT SECTION*********************/
 .about-container {
 	min-height: 92vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	padding: 10px 0;
 }
 .about-wrapper {
@@ -165,7 +176,7 @@ nav a {
 	width: 18rem;
 	height: 24rem;
 	object-position: center;
-	border: 0.3125rem solid var(--accent-color);
+	/* border: 0.3125rem solid var(--accent-color); */
 }
 
 .right h2 {
@@ -183,8 +194,8 @@ nav a {
 .services-container {
 	background-color: var(--alternate-bg);
 }
-.services-container,
-.portfolio-wrapper {
+.services-container
+ {
 	min-height: 92vh;
 	display: flex;
 	flex-direction: column;
@@ -219,14 +230,25 @@ nav a {
 	font-size: 40px;
 }
 /************PORTFOLIO***************/
-
+.portfolio-wrapper{
+	min-height: 92vh;
+	background: #eee;
+}
 .portfolio-wrapper h2 {
 	margin-bottom: 30px;
 }
-
+.port-container {
+	width: 80%;
+	margin:auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	min-height: 80%;
+	gap: 1rem;
+}
 .portfolio {
 	cursor: pointer;
 	transition: all 0.3s ease;
+	border-radius: 8px;
 }
 .port:hover {
 	transform: translateY(5px);
@@ -253,35 +275,35 @@ nav a {
 	min-height: 92vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	padding-top:2rem;
+	/* justify-content: center;
+	align-items: center; */
 }
 .form-wrapper h3 {
 	margin-bottom: 40px;
 	color: white;
 }
+.contact_info {
+	height: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/* padding: 10rem 5rem; */
+}
 
-.form-container {
-	width: 100%;
+.contact_info_content {
+	line-height:3;
 }
-.form-left,
-.form-right {
-	line-height: 30px;
-	padding: 10px;
+.form-wrapper p, .form-wrapper h3  {
+	text-align: center;
+
 }
-form label {
-	color: var(--primary-white);
+.contact_btn {
+	color: var(--accent-color);
+	letter-spacing:5px;
 }
-.form-left input,
-.form-right textarea {
-	width: 100%;
-	border: none;
-	outline: none;
-	padding: 8px 10px;
-	border-radius: 4px;
-}
-.form-left input {
-	margin-bottom: 10px;
+.contact_form {
+	width: 75%;
 }
 
 @media screen and (max-width: 768px) {
@@ -295,11 +317,14 @@ form label {
 	.portfolio {
 		margin-bottom: 10px;
 	}
-
+	.port-container {
+		width:90%;
+	}
 	.right h2 {
 		margin: 20px 0;
 		align-self: center;
 	}
+
 }
 @media screen and (max-width: 576px) {
 	.logo {
@@ -316,5 +341,19 @@ form label {
 
 	.about-wrapper {
 		max-width: 100% !important;
+	}
+	.contact_form {
+		width: 100%;
+	}
+	.port-container {
+		width:95%;
+		grid-template-columns: 1fr;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	.navbar{
+		padding:0.5rem !important;
 	}
 }
