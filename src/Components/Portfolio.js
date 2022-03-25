@@ -121,7 +121,7 @@ function Portfolio(props) {
         githubSite={"https://github.com/Olawande-samuel/React-portfolio"}
         githubImage={<FaGithub />}
         liveSiteImage={<FaLink />}
-        liveSite={"http://test.hotelsoffline.com"}
+        liveSite={"http://dev.hotelsoffline.com"}
       />
       <Mod
         heading="Spilleet"
@@ -135,7 +135,7 @@ function Portfolio(props) {
         githubSite={"https://github.com/Olawande-samuel/React_spilleet"}
         githubImage={<FaGithub />}
         liveSiteImage={<FaLink />}
-        liveSite={"http://test.spilleet.com"}
+        liveSite={"https://spilleet.com"}
       />
       <Mod
         heading="Datashopng"

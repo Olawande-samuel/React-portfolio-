@@ -8,7 +8,7 @@ import {
 	FaReact,
 	FaFigma,
 } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiMaterialui, SiNextdotjs } from "react-icons/si";
 
 function About() {
 	return (
@@ -16,33 +16,31 @@ function About() {
 					<h2 className="text-center" style={{marginBottom:"0"}}>About me</h2>
 			<div className="row justify-content-between align-items-center">
 				<div className="img-wrapper h-100 d-flex justify-content-center mb-2 mb-md-0 col-md-4">
-					<img src={Photo} alt="Author's Picture" />
+					<img src={Photo} alt="Author" />
 				</div>
 				<div className="col-md-8 px-2 px-sm-1">
 					<p>
-						<span>Hi,</span> I'm sure you must have been wondering, 'who is
-						that guy over there?' Well, that's me, Olawande, a web developer
-						from Nigeria. I build user-friendly, beautiful, modern and
-						responsive websites and web applications. I'm a graduate of
+						<span>Hi,</span> My name is Olawande Akinmosin. I am a frontend developer
+						based in Nigeria. I build user-friendly, beautiful, modern and
+						responsive websites/web applications. I'm a graduate of
 						English, and I have chosen to gradually work my way up the MERN
 						stack. The goal is to become a full-stack developer.
 					</p>
 
 					<p>
-						{" "}
 						I love building web projects, learning and applying new
 						technologies, and participating in activities that help me grow as
-						a developer. I also enjoy working together with people on
+						a software engineer. I also enjoy working together with people on
 						projects.
 					</p>
 					<p>
-						In my spare time, I sometimes dive into the imaginary world of
-						books where I go on adventures with the characters. Other times, I
+						In my spare time, I occasionally dive into the imaginary world of
+						books where I go on various adventures with the characters. Other times, I
 						rewatch my favourite tv shows- Futurama and Bojack Horseman.
 					</p>
 					<p>
-						Currently seeking gigs or junior developer positions. <br />
-						Here are a few technologies I've been working with recently:
+						Currently seeking web development gigs or junior developer positions. <br />
+						Here are a few technologies I've been working with recently and experienced in:
 					</p>
 
 					<div className="row">
@@ -75,6 +73,12 @@ function About() {
 							</p>
 							<p>
 								<span>
+									<SiNextdotjs />{" "}
+								</span>{" "}
+								Nextjs
+							</p>
+							<p>
+								<span>
 									<FaFigma />{" "}
 								</span>{" "}
 								Figma
@@ -92,6 +96,12 @@ function About() {
 									<FaBootstrap />{" "}
 								</span>{" "}
 								Bootstrap
+							</p>
+							<p>
+								<span>
+									<SiMaterialui />{" "}
+								</span>{" "}
+								Material UI
 							</p>
 						</div>
 					</div>
